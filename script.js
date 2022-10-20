@@ -323,40 +323,40 @@ const navigateAndSelectProduct = (key) => {
         const productContainerToSelect = selectProduct(indexToSelect);
         productContainerToSelect.classList.add("selected");
     }
-    // else {
-    //     const enteredProduct = filteredProduct[indexToSelect];  
-    //     const cardContainerTag = document.createElement("div");
-    //     cardContainerTag.classList.add("card", "cardContainer");
-    //     const cardImgTag = document.createElement("img");
-    //     cardImgTag.src = enteredProduct.image;
-    //     cardImgTag.classList.add("card-img-top");
+    else {
+        const enteredProduct = filteredProduct[indexToSelect];  
+        const cardContainerTag = document.createElement("div");
+        cardContainerTag.classList.add("card", "cardContainer");
+        const cardImgTag = document.createElement("img");
+        cardImgTag.src = enteredProduct.image;
+        cardImgTag.classList.add("card-img-top", "img");
 
-    //     const cardBody = document.createElement("div");
-    //     const cardTitleTag = document.createElement("div");
-    //     cardTitleTag.textContent = enteredProduct.title;
-    //     cardTitleTag.classList.add("card-title");
+        const cardBody = document.createElement("div");
+        const cardTitleTag = document.createElement("div");
+        cardTitleTag.textContent = enteredProduct.title;
+        cardTitleTag.classList.add("card-title");
 
-    //     const cardDesTag = document.createElement("div");
-    //     cardDesTag.textContent = enteredProduct.description;
-    //     cardDesTag.classList.add("card-text");
+        const cardDesTag = document.createElement("div");
+        cardDesTag.textContent = enteredProduct.description;
+        cardDesTag.classList.add("card-text");
 
-    //     closebtn = document.createElement("a");
-    //     closebtn.textContent = "Close";
-    //     closebtn.classList.add("btn", "btn-secondary");
+        closebtn = document.createElement("a");
+        closebtn.textContent = "Close";
+        closebtn.classList.add("btn", "btn-secondary");
 
-    //     cardBody.classList.add("card-body");
-    //     cardBody.append(cardTitleTag, cardDesTag, closebtn);  
+        cardBody.classList.add("card-body");
+        cardBody.append(cardTitleTag, cardDesTag, closebtn);  
 
-    //     cardContainerTag.append(cardImgTag, cardBody);
-    //     cardContainerDiv.append(cardContainerTag);
+        cardContainerTag.append(cardImgTag, cardBody);
+        cardContainerDiv.append(cardContainerTag);
 
-    //     closebtn.addEventListener("click", () => {
-    //         console.log("autoCompleteInputTag.innerHTML :",autoCompleteInputTag.value);
-    //         console.log(enteredProduct);
-    //         cardContainerDiv.style.display = "none";
-    //     });
+        closebtn.addEventListener("click", () => {
+            console.log("autoCompleteInputTag.innerHTML :",autoCompleteInputTag.value);
+            console.log(enteredProduct);
+            cardContainerDiv.style.display = "none";
+        });
 
-    // }
+    }
 }
 
 const deselectProduct = () => {

@@ -52,7 +52,7 @@ body {
 .cardContainer {
     margin: 10px;
     width: 350px;
-    /* display: none;s  */
+
 }
 
 .cardImgContainer {
@@ -62,13 +62,17 @@ body {
     margin: 10px;
 }
 
-.img-fluid {
-    height: 100%;
+
+.img {
+    height: 80%;
 }
 
 .card-title {
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-text {
